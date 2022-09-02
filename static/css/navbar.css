@@ -1,0 +1,137 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.navi {
+	z-index: inherit;
+}
+
+nav {
+	/* height: 8px; */
+	position: sticky;
+	top: 0 ;
+	z-index: 100;
+	background: #F7F7F7;
+	box-shadow: 0px 15px 25px rgba(173, 197, 221, 0.25);
+}
+
+nav {
+    height: 60px;
+    background: #F7F7F7;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown {
+	transition: 300ms ease-in-out;
+	margin: auto;
+}
+
+.rotate {
+	transform: rotate(180deg);
+	/* background-color: blue; */
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 15px;
+}
+.navi a:hover {
+	box-shadow: inset 5px 5px 10px rgba(173, 197, 221, 0.5), inset -5px -5px 10px rgba(255, 255, 255, 0.25);
+	border-radius: 30px;
+	transition: 150ms ease-in;
+}
+
+.navi a {
+	color: #4D6782;
+	font-size: 18px;
+	padding: 5px 15px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navi .col, .navi .row {
+	height: inherit;
+}
+
+.logo_pc {
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+.home_mobile {
+	display: none;
+}
+
+.logo_mobile {
+	position: absolute;
+	cursor: pointer;
+	left: 50%;
+	top: 50%;
+	transform : translate(-50%, -50%);
+	z-index:200;
+}
+
+.logo_mobile {display: none;}
+.hamburger{display: none;}
+
+@media screen and (max-width: 768px){
+	.line{
+		width: 30px;
+		height: 3px;
+		background: #4D6782;
+		margin: 5px;
+	}
+	
+	nav {
+		position:sticky;
+		top:0;
+		height: 60px !important;
+		/* width: 100vw !important; */
+	}
+
+	.navi {
+		height: 60px;
+	}
+	
+	.hamburger {
+		position: absolute;
+		display: block;
+		cursor: pointer;
+		right: 15px;
+		top: 50%;
+		transform : translate(-15px, -50%);
+		z-index:2;
+	}
+	
+	.nav-links{
+		background: #F7F7F7;
+		height:360px;
+		flex-direction: column;
+		clip-path : circle(100px at 50% -30%);
+		-webkit-clip-path: circle(100px at 50% -30%);
+		transition: all 300ms ease-in-out;
+		padding-top: -60px;
+		padding-bottom: 30px;
+		justify-content: space-around;
+	}
+	
+	.nav-links.open{
+		clip-path : circle(700px at 50% -20%);
+		-webkit-clip-path: circle(700px at 50% -20%);
+		box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+
+	.logo_mobile {display: block;}
+
+	.logo_pc {display: none;}
+}

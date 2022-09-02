@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Gallery
+{% endblock title %}
+    
+{% block content %}
+{% include 'navbar.html' %}
+    <script src="{% static 'javascript/jquery.visible.js' %}"></script>
+    <script src="{% static 'javascript/gallery.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <div class="fore" id="pic_overlay">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-lg" style="object-fit: cover; display: inline-block; margin-bottom: 30px;">
+                    <a id="open_pic"  target="_blank" href="" style="height: 100%;">
+                        <img id="pic" style="min-height: 150px;" src="{% static 'images/others/Logo.png' %}" alt="judul" width="100%">
+                        <h2 id="open_pic_message" style="font-size: 24px; margin-bottom: 0;">Click to zoom/download the picture</h2>
+                    </a>
+                </div>
+                <div class="col-lg" style="overflow-y: auto; max-height: 50vh;">
+                    <!-- <div class="onlymobile" style="height: 30px;"></div> -->
+                    <h2 class="loading" id="pic_judul">Lorem Ipsum</h2>
+                    <p class="loading" id="pic_deskripsi">
+                        Is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever 
+                        since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="header">Gallery</h1>
+    <div class="container-lg">
+        <div class="small"></div>
+        <h2  style ="color: #0e1738;">Events</h2>
+        <div class="row">
+            <!-- {% for pic in event %}
+                <div class="col col_frame">
+                    <div class="frame loading" onclick="openpic('{{pic.id_dok}}')">
+                        <img src="" alt="pic.judul" >
+                    </div>
+                </div>
+            {% endfor %}     -->
+        </div>
+        <div class="divider small"></div>
+        <h2  style ="color: #0e1738;">Posters</h2>
+		<!-- <div class="row"> 
+            {% for pic in poster %}
+                <div class="col col_frame">
+                    <div class="frame loading" onclick="openpic('{{pic.id_dok}}')">
+                        <img src="" alt="pic.judul">
+                    </div>
+                </div>
+            {% endfor %}   
+        </div> -->
+        <div class="medium"></div>
+    </div>
+    {% include 'footer.html' %}
+{% endblock content %}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+Poster Infografis
+{% endblock title %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'overlay_poster.html' %}
+
+<div class="container header_timeline poster">
+    <div class="row">
+        <div class="col-md onlymobile" style="height: 150px;"></div>
+        <div class="col-md">
+            <h1 style="color: #0e1738;">Poster Infografis</h1>
+            <p style="color: #0e1738;">
+                Poster Infografis merupakan kompetisi dimana peserta dapat mengekspresikan ide dan gagasannya mengenai tema yang 
+                ditentukan melalui media poster. Pembuatan Infografis meliputi skill desain, analisis informasi, dan story telling 
+                sebagai kunci dari infografis yang maksimal.
+            </p>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <hr style="margin-top: 60px;">
+</div>
+
+<div class="container">
+    <div class="small"></div>
+    <div class="row justify-content-center">
+        <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton purple">View All Timelines</a>
+    </div>	
+    <div class="small"></div>
+        <h2 style="color: #0e1738;">Oct. 11, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe poster" onclick="uploadon('poster_sub_open_1')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                        <p style="color: #ddd">Submission Open</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #0e1738;">Oct. 23, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe poster" onclick="uploadon('poster_sub_close')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">18:00 WIB</p>
+                        <p style="color: #ddd">Submission Closed</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #0e1738;">Nov. 01, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe poster" onclick="uploadon('poster_vote_open')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">20:00 WIB</p>
+                        <p style="color: #ddd">Voting Open</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #0e1738;">Nov. 08, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe poster" onclick="uploadon('poster_vote_close')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">20:00 WIB</p>
+                        <p style="color: #ddd">Voting Closed</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+</div>
+<!-- Lmao just start putting my name everywhere -->
+<div class="medium"></div>
+{% include 'footer.html' %}
+
+{% endblock %}

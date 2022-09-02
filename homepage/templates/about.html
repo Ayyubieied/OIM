@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    About Us
+{% endblock title %}
+    
+{% block content %}
+    {% include 'navbar.html' %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <div class="container-fluid contain_about nopadding">
+        <div class="container">
+            <div class="top_divide"></div>
+            <div class="row">
+                <h1 style="margin-left: 15px;color: #0e1738;">About OIM UI 2022</h1>
+            </div>
+            <div class="row">
+                <div style="text-align: justify;" class="col">
+                    <p style="color: #ddd;">
+                        <b>OIM UI</b> merupakan program kerja di bawah naungan <b>Departemen Pendidikan dan Keilmuan BEM UI.</b> 
+                        Program kerja ini berbentuk perlombaan keilmiahan yang menjadi wadah bagi mahasiswa 
+                        Universitas Indonesia untuk mengembangkan minat dan bakat mereka pada bidang keilmiahan 
+                        agar mampu memberikan kebermanfaatan bagi UI dan Indonesia. 
+                        OIM UI 2022 dilaksanakan selama lebih dari dua minggu yang dimulai dengan pelaksanaan 
+                        Grand Opening akbar dan ditutup dengan Grand Closing. Pada tahun ini, 
+                        <b>UI menyelenggarakan 15 cabang lomba</b> yang terdiri dari PKM RE, PKM RSH, PKM K, PKM PM, 
+                        PKM PI, PKM KC, PKM GFT, PKM AI, PKM VGK, PKM KI, debat Bahasa Indonesia, debat Bahasa Inggris, 
+                        esai, kuis, serta poster infografis. Seluruh cabang lomba tersebut dapat diikuti oleh seluruh 
+                        mahasiswa yang berasal dari <b>seluruh Fakultas dan Program Pendidikan Vokasi di Universitas Indonesia.</b>
+                    </p>
+                </div>
+                <div class="col-4 onlypc"></div>
+            </div>
+            <div style="height: 75px;"></div>
+        </div>
+
+        <div class="container-fluid contain_about_content nopadding">
+            <div style="height: 150px;" id="logo"></div>
+            <div class="container">
+                <h2 style="color: #0e1738;">Logo</h2>
+                <div class="row">
+                    <div class="col-md about_pic_contain">
+                        <img class="about_logo" src="{% static 'images/others/Logo.png' %}" alt="OIM 2021">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="grey" style="color: #0e1738;" >
+                            Logo OIM UI 2022 melambangkan seorang pemenang yang berhasil menyelamatkan kehidupan di bumi. 
+                            Seorang pemenang ini berhasil mengkolaborasikan semua elemen bumi untuk mencapai tujuan tersebut.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider small" id="mascot"></div>
+                <h2 style="color: #0e1738;">Maskot</h2>
+                <div class="row">
+                    <div class="col-md order-last about_pic_contain">
+                        <img class="about_mascot" src="{% static 'images/about/Maskot.png' %}" alt="OIM 2021">
+                    </div>
+                    <div class="col-md-8 order-first">
+                        <p class="grey" style="color: #0e1738;">
+                            Dalam perjalanan menyelamatkan bumi, OIM UI 2022 ditemani oleh <b style="color: #3cc7da;">Mate.</b> 
+                            Mate merupakan maskot OIM UI 2022 yang melambangkan kegigihan dalam upaya menyelamatkan makhluk hidup 
+                            dengan menciptakan keseimbangan iklim di bumi. 
+                        </p>
+                    </div>
+                </div>
+                <div class="divider small"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider medium"></div>
+    {% include 'footer.html' %}
+{% endblock content %}

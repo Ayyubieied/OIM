@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+Quiz
+{% endblock title %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'overlay_quiz.html' %}
+
+<div class="container header_timeline quiz">
+    <div class="row">
+        <div class="col-md onlymobile" style="height: 150px;"></div>
+        <div class="col-md">
+            <h1 style="color: #742d7e;">Quiz</h1>
+            <p style="color: #742d7e;">
+                Kompetisi Quiz melibatkan kemampuan peserta dalam hal pengetahuan umum, kreativitas, dan koordinasi antar 
+                peserta yang ditambah dengan unsur hiburan. Quiz diharapkan dapat mengembangkan wawasan dan menghibur setiap 
+                individu yang terlibat didalamnya, baik peserta maupun penonton.
+            </p>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <hr style="margin-top: 60px;">
+</div>
+
+<div class="container">
+    <div class="small"></div>
+    <div class="row justify-content-center">
+        <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton purple">View All Timelines</a>
+    </div>	
+    <div class="small"></div>
+        <h2 style="color: #742d7e;">Oct. 20, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_sim_reg_1')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB – 23:59 WIB</p>
+                        <p style="color: #ddd">Simulation Registration</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Oct. 23, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_reg_open')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                        <p style="color: #ddd">Quiz Registration Open</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_sim_1')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">09:00 WIB - 12:00 WIB</p>
+                        <p style="color: #ddd">Quiz Simulation 1</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_sim_2')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">13:00 WIB - 16:00 WIB</p>
+                        <p style="color: #ddd">Quiz Simulation 2</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Oct. 25, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_reg_close')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">20:00 WIB</p>
+                        <p style="color: #ddd">Quiz Registration Closed</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Oct. 29, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_yel_sub')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB – 23:59 WIB</p>
+                        <p style="color: #ddd">Yel-Yel Quiz Submission</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Website</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Nov. 03, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_pre_1')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">13:00 WIB – 18:00 WIB</p>
+                        <p style="color: #ddd">Preliminary 1</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Nov. 04, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_pre_2')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">13:00 WIB – 18:00 WIB</p>
+                        <p style="color: #ddd">Preliminary 2</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #742d7e;">Nov. 12, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe quiz" onclick="uploadon('quiz_final')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">13:00 WIB – 18:00 WIB</p>
+                        <p style="color: #ddd">Final</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+</div>
+<!-- Lmao just start putting my name everywhere -->
+<div class="medium"></div>
+{% include 'footer.html' %}
+
+{% endblock %}

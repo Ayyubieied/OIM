@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;700&family=Jost:wght@300;500;700&display=swap');
+#footer {
+    /* height: 500px; */
+    background-color: #2C2C2C;
+    padding: 30px 0;
+    color: white;
+    height: 240px;
+}
+
+#footer a{
+    color: white;
+}
+
+#bemui {
+    border-left: 2px solid #f7f7f7;
+    padding: 0;
+}
+
+#bemui img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer{
+        padding: 30px 30px;
+    }
+
+    #footer p a {
+        font-size: 18px;
+    }
+}

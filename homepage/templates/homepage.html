@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+    Homepage
+{% endblock title %}
+    
+{% block content %}
+    <!-- <div class="header">
+        <h1>Parallax Effect</h1>
+    </div> -->
+    {% include 'overlay_berkas.html' %}
+    {% include 'overlay.html' %}
+    <div class="parallax gradient city_back">
+        {% include 'navbar.html' %}
+        <div class="mascot onlypc"></div>
+        <div class="small"></div>
+        <div class="container" style="text-align: center;">
+            <h3 
+                style="
+                    color: white; 
+                    font-family: 'Jost'; 
+                    text-shadow: 0px 10px 15px rgba(169, 59, 197, 0.5);
+                    "
+            >
+            <b>
+                OIM UI 2022
+            </b>
+            <br>
+                starts in
+            </h3>
+            <div class="small"></div>
+            <!-- <img class="oimlogo" src="{% static 'images/others/Logo.png' %}" alt="OIM 2020"> -->
+            {% include 'countdown.html' %}
+            <div style="height: 30px;"></div>
+            {% include 'registbox.html' %}
+            <!-- <div class="row justify-content-center scrolldown onlypc">
+                <a href="/#homepage_content">
+                    <img src="{% static '/images/others/scroll.svg' %}" alt="Scroll" height="100%">
+                </a>
+            </div> -->
+        </div>
+        <div class="content" id="homepage_content">
+            <div class="container">
+                <div style="height: 140px;"></div>
+                <div class="theme">
+                    <h1 style="color: #0e1738;font-size: 50px;">Climate Change:</h1>
+                    <h1 style="color: #0e1738;font-size: 50px;">Balance the Earth, Save Life</h1>
+                    <div style="height: 15px;"></div>
+                    <div style="text-align: justify">
+                        <p style="color: #0e1738;">
+                            OIM UI 2022 mengangkat tema <b >Climate Change.</b> Perubahan iklim tidak hanya berdampak bagi manusia, 
+                            namun juga berdampak bagi makhluk hidup lainnya seperti hewan dan tumbuhan. Dengan mengangkat tema ini, 
+                            OIM UI 2022 mengajak seluruh mahasiswa Universitas Indonesia untuk peduli dengan perubahan di sekitar lingkungannya terutama iklim. 
+                            Diharapkan dengan adanya tema ini, mahasiswa dapat melibatkan complex thinking dengan berkolaborasi dalam upaya memperlambat climate change 
+                            dengan menciptakan berbagai inovasi dan pemikiran untuk menyelamatkan kehidupan.
+                        </p>
+                    </div>
+                </div>
+                <div class="medium"></div>
+                <div class="loading"></div>
+                <h2 style="color: #0e1738;">Timeline</h2>
+                <div style="height: 15px;"></div>
+                <div class="row justify-content-end" style="padding-right: 15px">
+                    <a 
+                        class="mybutton"
+                        href="{% url 'homepage:timeline' 'all' %}" 
+                        style="
+                            background: aqua;
+                            box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.293); 
+                            color: black !important;"
+                    >
+                        View All Event
+                    </a>
+                </div>
+				<!-- <div class="divider small"></div>
+				<h2 style="color: #0e1738;">Sponsors</h2>
+                <div class="row">
+                    <img src="{% static 'images/sponsor/jenius.PNG' %}" height="100px" style="margin:10px" alt="Dropdown">
+                    <img src="{% static 'images/sponsor/bogasari.jpg' %}" height="100px" style="margin:10px" alt="Dropdown">
+                    <img src="{% static 'images/sponsor/whyapparel.png' %}" height="60px" style="margin-top:40px" alt="Dropdown">
+                    <img src="{% static 'images/sponsor/taman_melati.jpg' %}" height="60px" style="margin-top:40px;margin-right:10px" alt="Dropdown">
+                    <img src="{% static 'images/sponsor/inaco.jpg' %}" height="60px" style="margin-top:40px;margin-left:10px" alt="Dropdown">
+                </div> -->
+                <div class="divider small"></div>
+            </div>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock %}

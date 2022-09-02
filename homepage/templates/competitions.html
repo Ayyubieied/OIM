@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Competitions
+{% endblock title %}
+    
+{% block content %}
+	{% include 'navbar.html' %}
+    <h1 class="header">Competitions</h1>
+    <div class="container-lg">
+        <div class="divider small"></div>
+        <div class="row justify-content-center">
+            <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton purple">View Timelines</a>
+        </div>
+        <div class="divider small"></div>
+        <h2 style ="color: #0e1738;">Non-PKM</h2>
+        <div class="row">
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'debat' %}">
+                    <div class="compe debat">
+                        <p class="bold compe_title" style="color: white;">DEBAT</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'quiz' %}">
+                    <div class="compe quiz">
+                        <p class="bold compe_title" style="color: white;">QUIZ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'essay' %}">
+                    <div class="compe essay">
+                        <p class="bold compe_title" style="color: white;">ESSAY</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'poster' %}">
+                    <div class="compe poster">
+                        <p class="bold compe_title" style="color: white;">POSTER</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="divider medium"></div>
+        <h2 style ="color: #0e1738;">PKM</h2>
+        <div class="row">
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmai' %}">
+                    <div class="compe pkmai">
+                        <p class="bold compe_title" style="color: white;">PKM AI</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmgfk' %}">
+                    <div class="compe pkmgfk">
+                        <p class="bold compe_title" style="color: white;">PKM GFK</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmgt' %}">
+                    <div class="compe pkmgt">
+                        <p class="bold compe_title" style="color: white;">PKM GT</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmk' %}">
+                    <div class="compe pkmk">
+                        <p class="bold compe_title" style="color: white;">PKM K</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmkc' %}">
+                    <div class="compe pkmkc">
+                        <p class="bold compe_title" style="color: white;">PKM KC</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmpi' %}">
+                    <div class="compe pkmpi">
+                        <p class="bold compe_title" style="color: white;">PKM PI</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmpm' %}">
+                    <div class="compe pkmpm">
+                        <p class="bold compe_title" style="color: white;">PKM PM</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href="{% url 'homepage:timeline' 'pkmr' %}">
+                    <div class="compe pkmr">
+                        <p class="bold compe_title" style="color: white;">PKM R</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="divider medium"></div>
+    {% include 'footer.html' %}
+{% endblock content %}

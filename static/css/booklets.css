@@ -1,0 +1,41 @@
+.bookback {
+    background-size: cover;
+    height: 300px;
+    transition: 75ms ease-in;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 20px;
+}
+
+.bookback:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(.99);
+}
+
+.bookback p {
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+}
+
+.bookletquiz {background-image: url('../images/booklets/Poin5_LogoBooklet_Quiz_1.png');}
+.bookletessay {background-image: url('../images/booklets/Poin5_LogoBooklet_Essay_1.png');}
+.bookletposter {background-image: url('../images/booklets/Poin5_LogoBooklet_Poster_1.png');}
+.bookletdebat {background-image: url('../images/booklets/Poin5_LogoBooklet_Debat_1.png');}
+.bookletpkm {background-image: url('../images/booklets/BookletPKM.png');}
+.bookletpkmai {background-image: url('../images/booklets/BookletPKM_AI.png');}
+.bookletpkmgfk {background-image: url('../images/booklets/BookletPKM_GFK.png');}
+.bookletpkmgt {background-image: url('../images/booklets/BookletPKM_GT.png');}
+.bookletpkmk {background-image: url('../images/booklets/BookletPKM_K.png');}
+.bookletpkmkc {background-image: url('../images/booklets/BookletPKM_KC.png');}
+.bookletpkmp {background-image: url('../images/booklets/BookletPKM_PI.png');}
+.bookletpkmm {background-image: url('../images/booklets/BookletPKM_PM.png');}
+.bookletpkmt {background-image: url('../images/booklets/BookletPKM_R.png');}
+
+@media only screen and (max-width: 600px) {
+    .bookback {
+        height: 240px;
+    }
+}

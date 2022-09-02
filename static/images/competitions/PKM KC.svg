@@ -1,0 +1,33 @@
+<svg width="270" height="240" viewBox="0 0 270 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="270" height="240">
+<rect width="270" height="240" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<g filter="url(#filter0_dd)">
+<path d="M167.048 117.173L167.042 117.159L167.035 117.144C158.721 100.641 157.829 80.7823 164.833 63.3351C178.228 29.9695 216.433 13.6524 249.799 27.047C283.164 40.4417 299.481 78.6468 286.087 112.012C279.26 129.018 265.279 142.401 247.985 148.883L247.975 148.887L247.964 148.891L247.04 149.286C240.111 152.246 234.856 159.087 231.34 165.135C229.575 168.169 228.235 171.027 227.331 173.14C226.879 174.197 226.535 175.068 226.301 175.683C226.184 175.99 226.095 176.233 226.033 176.403C226.003 176.488 225.979 176.555 225.962 176.602C225.948 176.641 225.942 176.658 225.94 176.664C225.939 176.666 225.939 176.666 225.94 176.664C225.542 177.655 224.75 178.47 223.962 178.807C223.147 179.155 222.229 179.229 221.267 178.842L165.23 156.347C164.473 156.042 163.65 155.257 163.308 154.457C162.859 153.406 162.948 152.596 163.331 151.616C163.348 151.591 163.363 151.567 163.376 151.546C163.411 151.489 163.452 151.415 163.495 151.331C163.584 151.161 163.699 150.921 163.836 150.619C164.11 150.015 164.474 149.148 164.884 148.073C165.703 145.923 166.704 142.928 167.514 139.51C169.129 132.697 170.007 124.101 167.048 117.173Z" fill="#F7F7F7" stroke="#6C87A3"/>
+<path d="M168.252 166.5L211.844 184C216.642 185.926 219.017 191.486 217.09 196.284C215.175 201.056 209.716 203.252 204.576 201.439L161.214 184.031C156.416 182.105 154.041 176.544 155.967 171.746C157.893 166.948 163.454 164.574 168.252 166.5Z" fill="#F7F7F7" stroke="#6C87A3"/>
+<path d="M162.955 193.16L197.236 206.922C202.041 208.851 204.494 214.196 202.483 219.206C200.556 224.004 194.996 226.379 190.198 224.453L155.917 210.691C151.119 208.765 148.744 203.204 150.67 198.406C152.597 193.608 158.157 191.234 162.955 193.16Z" fill="#F7F7F7" stroke="#6C87A3"/>
+</g>
+<rect x="-15" width="285" height="240" fill="url(#paint0_radial)"/>
+</g>
+<defs>
+<filter id="filter0_dd" x="119.501" y="-8.13867" width="201.772" height="263.761" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="-10" dy="-10"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="10" dy="10"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(127.5 120) rotate(90) scale(120 142.5)">
+<stop offset="0.84375" stop-color="#F7F7F7" stop-opacity="0"/>
+<stop offset="1" stop-color="#F7F7F7"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,63 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #91C5F8;
+    text-align: center;
+    z-index: 900;
+}
+
+#loader h1 {
+    font-size: 36px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    animation: pulse 750ms infinite;
+}
+
+#loader img {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#loader p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; color: white;
+    animation: fade-in;
+}
+
+#loadimg1 {animation: load-zoom 5s ease-in-out 0s infinite;}
+#loadimg2 {animation: load-zoom 5s ease-in-out 0.5s infinite;}
+#loadimg3 {animation: load-zoom 5s ease-in-out 1s infinite;}
+#loadimg4 {animation: load-zoom 5s ease-in-out 1.5s infinite;}
+#loadimg5 {animation: load-zoom 5s ease-in-out 2s infinite;}
+#loadimg6 {animation: load-zoom 5s ease-in-out 2.5s infinite;}
+#loadimg7 {animation: load-zoom 5s ease-in-out 3s infinite;}
+#loadimg8 {animation: load-zoom 5s ease-in-out 3.5s infinite;}
+#loadimg9 {animation: load-zoom 5s ease-in-out 4s infinite;}
+#loadimg10 {animation: load-zoom 5s ease-in-out 4.5s infinite;}
+
+@keyframes load-zoom {
+    0% {opacity: 0; height: 80px;}
+    2%, 10% {opacity: 1; height: 100px;}
+    12%, 100% {opacity: 0; height: 120px;}
+}
+
+@keyframes fade {
+    0% {opacity: 0; height: 80px;}
+    2%, 10% {opacity: 1; height: 100px;}
+    12%, 100% {opacity: 0; height: 120px;}
+}

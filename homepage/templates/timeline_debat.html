@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+Debat
+{% endblock title %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'overlay_debat.html' %}
+
+<div class="container header_timeline debat">
+    <div class="row">
+        <div class="col-md onlymobile" style="height: 150px;"></div>
+        <div class="col-md">
+            <h1 style="color: #0e1738;">Debat</h1>
+            <p style="color: #0e1738;">
+                Perlombaan debat adalah perlombaan yang menguji dan memperlombakan kemampuan peserta lomba untuk 
+                berpikir kritis dan menyampaikan argumentasi serta sanggahan sesuai dengan kaidah berpikir yang 
+                didasari oleh landasan logika yang dapat diterima oleh nalar. Perlombaan debat terbagi atas dua 
+                jenis lomba yakni, lomba debat bahasa indonesia dan lomba debat bahasa inggris. Mekanisme yang 
+                diterapkan dalam perlombaan debat ini adalah Asian Parliamentary System (APS) dimana setiap 
+                fakultas akan diwakili oleh 3 orang pembicara yang akan menjalankan perannya masing-masing.
+            </p>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <hr style="margin-top: 60px;">
+</div>
+
+<div class="container">
+    <div class="small"></div>
+    <div class="row justify-content-center">
+        <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton purple" >View All Timelines</a>
+    </div>	
+    <div class="small"></div>
+        <h2 style="color: #0e1738;">Nov. 6, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe debat" onclick="uploadon('debat_pre_ind_1')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">08:30 WIB – 18:00 WIB</p>
+                        <p style="color: #ddd">Preliminary (Indonesia)</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col compe_col">
+                    <div class="compe debat" onclick="uploadon('debat_pre_ing')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">08:30 WIB – 18:00 WIB</p>
+                        <p style="color: #ddd">Preliminary (English)</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #0e1738;">Nov. 8, 2021</h2>
+        <div class="row">
+                <div class="col compe_col">
+                    <div class="compe debat" onclick="uploadon('debat_semi_ind')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">18:30 WIB – 22:10 WIB</p>
+                        <p style="color: #ddd">Semifinal (Indonesia)</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col compe_col">
+                    <div class="compe debat" onclick="uploadon('debat_semi_ing')" style="min-height: 180px;">
+                        <p class="bold" style="margin-bottom: 5px;color: #ddd">18:30 WIB – 22:10 WIB</p>
+                        <p style="color: #ddd">Semifinal (English)</p>
+                        <div class="bottom_text">
+                            <p style="color: #ddd">Youtube</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="height: 15px;"></div>
+        <h2 style="color: #0e1738;">Nov. 9, 2021</h2>
+        <div class="row">
+            <div class="col compe_col">
+                <div class="compe debat" onclick="uploadon('debat_fin_ind')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">18:30 WIB – 22:10 WIB</p>
+                    <p style="color: #ddd">Final (Indonesia)</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Youtube</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col compe_col">
+                <div class="compe debat" onclick="uploadon('debat_fin_ing')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">18:30 WIB – 22:10 WIB</p>
+                    <p style="color: #ddd">Final (English)</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Youtube</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 15px;"></div>
+</div>
+<!-- Lmao just start putting my name everywhere -->
+<div class="medium"></div>
+{% include 'footer.html' %}
+
+{% endblock %}

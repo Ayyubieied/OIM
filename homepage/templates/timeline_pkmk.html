@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+PKM K
+{% endblock title %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'overlay_pkmk.html' %}
+
+<div class="container header_timeline pkmk">
+    <div class="row">
+        <div class="col-md onlymobile" style="height: 150px;"></div>
+        <div class="col-md">
+            <h1 style="color: #0e1738;">PKM K</h1>
+            <p style="color: #0e1738;">
+                PKM diluncurkan oleh Ditjen Belmawa (Kemendikbud) yang merupakan kompetisi tingkat nasional bidang penalaran 
+                dengan memfasilitasi potensi yang dimiliki mahasiswa Indonesia untuk menumbuhkan, mewadahi, dan mewujudkan 
+                ide kreatif dan inovatif mahasiswa. 
+                Pembuatan produk yang unik dan bermanfaat untuk kewirausahaan.
+            </p>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <hr style="margin-top: 60px;">
+</div>
+
+<div class="container">
+    <div class="small"></div>
+    <div class="row justify-content-center">
+        <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton purple">View All Timelines</a>
+    </div>	
+    <div class="small"></div>
+    <h2 style="color: #0e1738;">Sept. 23, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_sub_open_1')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Submission Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 04, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_video_open')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Video Upload Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 14, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_sub_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Submission Closed</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 18, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_proposal_open')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Proposal Grading Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 24, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_video_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Video Upload Closed</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Nov. 10, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_presentation')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">08:00 WIB - 17:00 WIB</p>
+                    <p style="color: #ddd">Online Presentation</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Youtube</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Nov. 14, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmk" onclick="uploadon('pkmk_proposal_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Proposal Grading Close</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+</div>
+<!-- Lmao just start putting my name everywhere -->
+<div class="medium"></div>
+{% include 'footer.html' %}
+
+{% endblock %}

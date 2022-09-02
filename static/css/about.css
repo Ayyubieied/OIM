@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;700&family=Jost:wght@300;500;700&display=swap');
+
+.contain_about {
+    background: 
+        url('../images/about/Poin2_AboutUs.png') bottom right, 
+        linear-gradient(128.86deg, #f6a6ff 21.48%, #af43be 54.7%);
+    background-repeat: 
+        no-repeat;
+    background-position: 
+        right 0px,
+        right bottom;
+    background-size: 
+        auto 600px,
+        cover;
+}
+
+.contain_about_content {
+    background-image: url('../images/homepage/Back.svg') !important;
+    background-size: cover;
+}
+
+.about_logo {
+    width: 80%;
+    /* height: 300px; */
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_mascot {
+    width: 80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_pic_contain {
+    height: 250px;
+}
+
+.about_logo:nth-child(odd) {
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+.person {
+    /* width: 100%; */
+    /* min-width: 100px; */
+    /* height: 100%; */
+    overflow: visible;
+    background-color: #F7F7F7;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1), -15px -15px 25px #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    line-height: 10px;
+    /* background-color: aqua; */
+    /* background-size: contain;
+    background-position: bottom right; */
+    transition: 150ms;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.person_pic {
+    height: 170px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.top_divide {
+    height: 100px;
+}
+
+@media only screen and (max-width: 1030px) {
+    .contain_about {
+        /* background-size: 200%; */
+        background-position: 
+            right 250px,
+            right bottom;
+        background-size: 
+            auto 400px,
+            auto;
+        background: linear-gradient(
+            128.86deg, #f6a6ff, #af43be 54.7%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contain_about {
+        /* background-size: 200%; */
+        background-position: 
+            0px 400px,
+            right bottom;
+        background-size: 
+            auto 300px,
+            auto;
+        background: linear-gradient(
+            128.86deg, #f6a6ff, #af43be 54.7%);
+    }
+    .top_divide {
+        height: 50px;
+    }
+    
+    .about_pic_contain {
+        height: 300px;
+    }
+
+    .about_mascot{
+        width: 200px;
+    }
+
+    .person_pic {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .person {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .order-last {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    
+    .order-first {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 13;
+    order: 13;
+    }
+
+    .about_side {
+        display: none;
+        width: 0px;
+    }
+}

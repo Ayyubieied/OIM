@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Booklets
+{% endblock title %}
+    
+{% block content %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="{% static 'css/booklets.css' %}">
+    <h1 class="header">Booklets</h1>
+    <div class="container-lg">
+        <div class="small"></div>
+        <h2 style ="color: #0e1738;">Booklets</h2>
+        <div class="row">
+            <a class="col compe_col" href = "https://drive.google.com/file/d/17-6Cc5b59rnF6_Xg_DMBTtL-jdSpHCph/view?usp=sharing">
+                <div class="bookback bookletdebat">
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1-AvY1qMmwiIUzQ42W_yDIvdGS8HkSRv6/view?usp=sharing">
+                <div class="bookback bookletquiz">
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/16irG-0PLdT_GkUIShVcK1nEtu8RwE32Z/view?usp=sharing">
+                <div class="bookback bookletessay">
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1r6ISQNyTX3undT-FkFE5zPGPkBJMi-T0/view?usp=sharing">
+                <div class="bookback bookletposter">
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1TpMH2GXr_bZnLhqoHUNbtVV5O3kpn_4r/view?usp=sharing">
+                <div class="bookback bookletpkmai">
+                </div>
+            </a>
+            <a class="col compe_col" href = "">
+                <div class="bookback bookletpkmgfk">
+                </div>
+            </a>
+            <a class="col compe_col" href = "">
+                <div class="bookback bookletpkmgt">
+
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1UuV7iPsuie6TX-ovctEq5ywwXhl_7gZK/view?usp=sharing">
+                <div class="bookback bookletpkmk">
+
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/173pjZKCu6_EhLdkPnEso0K3SS9tkdGka/view?usp=sharing">
+                <div class="bookback bookletpkmkc">
+
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1HinRfoJDq8bkzhWqNyD-Wqpfq_-VWZMx/view?usp=sharing">
+                <div class="bookback bookletpkmp">
+
+                </div>
+            </a>
+            <a class="col compe_col" href = "https://drive.google.com/file/d/1Gpo2hVX-A6zpJTSI9pPOu9VDVleTjtNq/view?usp=sharing">
+                <div class="bookback bookletpkmm">
+
+                </div>
+            </a>
+            <a class="col compe_col" href = "">
+                <div class="bookback bookletpkmt">
+
+                </div>
+            </a>
+        </div>
+        <div class="small"></div>
+        <h2 style ="color: #0e1738;">Formats</h2>
+        <div class="row">
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmai">
+                        <p class="bold compe_title" style="color: white;">PKM AI</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmgfk">
+                        <p class="bold compe_title" style="color: white;">PKM GFK</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmgt">
+                        <p class="bold compe_title" style="color: white;">PKM GT</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmk">
+                        <p class="bold compe_title" style="color: white;">PKM K</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+
+                    <div class="compe pkmkc">
+                        <p class="bold compe_title" style="color: white;">PKM KC</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+
+                    <div class="compe pkmpi">
+                        <p class="bold compe_title" style="color: white;">PKM PI</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmpm">
+                        <p class="bold compe_title" style="color: white;">PKM PM</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col compe_col">
+                <a href = "{% url 'homepage:pagenotavailable' %}">
+                    <div class="compe pkmr">
+                        <p class="bold compe_title" style="color: white;">PKM R</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium"></div>
+    </div>
+    {% include 'footer.html' %}
+{% endblock content %}

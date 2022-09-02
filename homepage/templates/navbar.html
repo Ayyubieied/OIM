@@ -1,0 +1,91 @@
+{% load static %}
+<script src="{% static 'javascript/navbar.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<nav>
+	<a class="logo_mobile" href="{% url 'homepage:homepage' %}"><img src="/static/images/others/Logo.png" height="30px" alt="Logo OIM 2022"></a>
+	<div class="navi">
+		<div class="hamburger">
+			<img class="dropdown" src="{% static 'images/others/dropdown.svg' %}" height="15px" alt="Dropdown">
+		</div>
+		<div class="container" style="height: 100%;">
+			<div class="row" style="height: inherit;">
+				<div class="col-3 onlypc">
+					<a 
+						class="logo_pc" 
+						href="{% url 'homepage:homepage' %}"
+					>
+						<img height="60px" src="/static/images/others/Logo.png" alt="Logo OIM 2022">
+					</a>
+				</div>
+				<div class="col" style="padding-right: 13px;">
+					<ul class="nav-links" >
+						<li>
+							<a 
+								href="{% url 'homepage:about' %}" 
+								style="
+									color: #0e1738;
+								"
+							>	
+								About
+							</a>
+						</li>
+						<li>
+							<a 
+								href="{% url 'homepage:gallery' %}" 
+								style="
+									color: #0e1738;
+								"
+							>	
+								Gallery
+							</a>
+						</li>
+						<li>
+							<a 
+								href="{% url 'homepage:competitions' %}" 
+								style="
+									color: #0e1738;
+								"
+							>	
+								Competitions
+							</a>
+						</li>
+						<li>
+							<a 
+								href="{% url 'homepage:timeline' 'all' %}" 
+								style="
+									color: #0e1738;
+								"
+							>	
+								Timeline
+							</a>
+						</li>
+						<li>
+							<a 
+								href="{% url 'homepage:booklets' %}" 
+								style="
+									color: #0e1738;
+									"
+							>
+								Booklets
+							</a>
+						</li>
+						<div class="onlypc" style="width: 15px;"></div>
+						<li>
+							<a 
+								class="mybutton"
+								href="https://bit.ly/PendaftaranKetkonOIMUI21"
+								style="
+									background: aqua;
+									color: black !important;
+									"
+							>
+								Daftar
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        <!-- Farizio was here -->
+	</div>
+</nav>

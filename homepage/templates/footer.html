@@ -1,0 +1,48 @@
+{% load static %}
+<footer class="container-fluid" id="footer">
+    <div style="height: 5px; background-color: #f7f7f7; width: 100%; position: relative; top: -35px;"></div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <p class="bold">OIM UI 2022</p>
+                <a href="{% url 'homepage:homepage' %}">Home</a>
+                <br>
+                <a href="{% url 'homepage:gallery' %}">Gallery</a>
+                <br>
+                <a href="{% url 'homepage:competitions' %}">Competitions</a>
+                <br>
+                <a href="{% url 'homepage:timeline' 'all' %}">Timeline</a>
+
+            </div>
+            <div class="col">
+                <p class="bold">Social Media</p>
+                <a href="https://www.instagram.com/oim_ui/">Instagram</a>
+                <br>
+                <a href="https://www.twitter.com/@UI_OIM/">Twitter</a>
+                <br>
+                <a href="https://line.me/R/ti/p/@jqj0039y">LINE</a>
+                <br>
+                <a href="https://www.youtube.com/channel/UCGVWbsZkQ-ugDXZGeLpDXRw/">YouTube</a>
+            </div>
+            <!-- <div class="row">
+                <img src="{% static 'images/sponsor/jenius.PNG' %}" height="100px" style="margin:10px" alt="Dropdown">
+                <img src="{% static 'images/sponsor/bogasari.jpg' %}" height="100px" style="margin:10px" alt="Dropdown">
+                <img src="{% static 'images/sponsor/whyapparel.png' %}" height="60px" style="margin-top:40px" alt="Dropdown">
+                <img src="{% static 'images/sponsor/taman_melati.jpg' %}" height="60px" style="margin-top:40px;margin-right:10px" alt="Dropdown">
+                <img src="{% static 'images/sponsor/inaco.jpg' %}" height="60px" style="margin-top:40px;margin-left:10px" alt="Dropdown">
+            </div> -->
+            <div class="col-5 onlypc" id="bemui">
+                <img src="{% static 'images/others/bemui2021.png' %}" alt="BEM UI">
+            </div>
+        </div>
+    </div>
+</footer>
+
+           <!-- <div class="col">
+                <p class="bold">About Us</p>
+                <a href="{% url 'homepage:about' %}">About OIM UI 2022</a>
+                <br>
+                <a href="{% url 'homepage:about' %}">Logo</a>
+                <br>
+                <a href="{% url 'homepage:about' %}">Mascot</a>
+            </div> -->

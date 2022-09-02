@@ -1,0 +1,23 @@
+{% load static %}
+
+<div class="container countdown_cont" style="text-align: center">
+    <div class="row">
+        <div class="col no-pad-right">
+            <p class="countdown" id="month" style="color: #0e1738;"></p>
+            <h3 class="countlabel" id="label_month" style="color: white;">Month</h3>
+        </div>
+        <div class="col no-pad-right">
+            <p class="countdown" id="day" style="color: #0e1738;"></p>
+            <h3 class="countlabel" id="label_day" style="color: white;">Day</h3>
+        </div>
+        <div class="col">
+            <p class="countdown" id="hour" style="color: #0e1738;"></p>
+            <h3 class="countlabel" id="label_hour" style="color: white;">Hour</h3>
+        </div>
+        <div class="col onlypc">
+            <p class="countdown" id="minute" style="color: #0e1738;"></p>
+            <h3 class="countlabel" id="label_minute" style="color: white;">Minute</h3>
+        </div>
+    </div>
+</div>
+<script src="{% static 'javascript/countdown.js' %}"></script>
