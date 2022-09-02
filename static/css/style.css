@@ -76,10 +76,10 @@ body {
 
 .city_back::before {
     content:"";
-    width: 100%;
-    height: 100vh;
+    width: 110%;
+    height: 130vh;
     top:120px;
-    background-image: url('../images/others/Poin1_Homepage.png');
+    background-image: url('../images/others/Homepage_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
