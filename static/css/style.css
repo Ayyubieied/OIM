@@ -276,7 +276,10 @@ a:hover {color: #af43be}
     .onlypc {display: none;}
     .onlymobile {display: block;}
     .no-pad-right {padding-right: 0;}
-    nav {height: 50px;}
+    nav {
+        height: 50px;
+        box-shadow: 10px 10px 10px black;
+    }
 
     .navlogo {display: none;}
 

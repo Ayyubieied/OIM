@@ -2,13 +2,10 @@
 
 .contain_about {
     background: 
-        url('../images/about/Poin2_AboutUs.png') bottom right, 
-        linear-gradient(128.86deg, #f6a6ff 21.48%, #af43be 54.7%);
+        url('../images/about/About OIM 2022.jpg') top left;
+        /* linear-gradient(128.86deg, #f6a6ff 21.48%, #af43be 54.7%); */
     background-repeat: 
         no-repeat;
-    background-position: 
-        right 0px,
-        right bottom;
     background-size: 
         auto 600px,
         cover;
