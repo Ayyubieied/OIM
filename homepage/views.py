@@ -25,10 +25,10 @@ def timeline(request, competition):
         url = 'timeline_poster.html'
     elif competition == "pkmai":
         url = 'timeline_pkmai.html'
-    elif competition == "pkmgfk":
-        url = 'timeline_pkmgfk.html'
-    elif competition == "pkmgt":
-        url = 'timeline_pkmgt.html'
+    elif competition == "pkmvgk":
+        url = 'timeline_pkmvgk.html'
+    elif competition == "pkmgft":
+        url = 'timeline_pkmgft.html'
     elif competition == "pkmk":
         url = 'timeline_pkmk.html'
     elif competition == "pkmkc":
@@ -37,8 +37,12 @@ def timeline(request, competition):
         url = 'timeline_pkmpi.html'
     elif competition == "pkmpm":
         url = 'timeline_pkmpm.html'
-    elif competition == "pkmr":
-        url = 'timeline_pkmr.html'
+    elif competition == "pkmre":
+        url = 'timeline_pkmre.html'
+    elif competition == "pkmrsh":
+        url = 'timeline_pkmrsh.html'
+    elif competition == "pkmki":
+        url = 'timeline_pkmki.html'
     elif competition == "all":
         url = 'timeline.html'
     else :

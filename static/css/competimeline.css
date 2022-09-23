@@ -58,7 +58,7 @@
 .debat {background-image: url('../images/competitions/LogoLomba_Debat.png');}
 .pkm {background-image: url('../images/competitions/LogoPKM.png');}
 .pkmai {background-image: url('../images/competitions/LogoPKM_AI.png');}
-.pkmgfk {background-image: url('../images/competitions/LogoPKM_GFK.png');}
+.pkmvgk {background-image: url('../images/competitions/LogoPKM_GFK.png');}
 .pkmgt {background-image: url('../images/competitions/LogoPKM_GT.png');}
 .pkmk {background-image: url('../images/competitions/LogoPKM_K.png');}
 .pkmkc {background-image: url('../images/competitions/LogoPKM_KC.png');}
@@ -123,7 +123,5 @@
 
     .header_timeline {
         background-size: 270px auto;
-    }
-
-    
+    } 
 }

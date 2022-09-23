@@ -2,8 +2,8 @@
 
 .contain_about {
     background: 
-        url('../images/about/About OIM 2022.jpg') top left;
-        /* linear-gradient(128.86deg, #f6a6ff 21.48%, #af43be 54.7%); */
+        url('../images/about/About OIM 2022.jpg') top left,
+        linear-gradient(128.86deg, #f6a6ff 21.48%, aqua 30.7%);
     background-repeat: 
         no-repeat;
     background-size: 
@@ -84,7 +84,7 @@
             auto 400px,
             auto;
         background: linear-gradient(
-            128.86deg, #f6a6ff, #af43be 54.7%);
+            128.86deg, #a6feff, aqua 40.7%);
     }
 }
 
@@ -98,7 +98,7 @@
             auto 300px,
             auto;
         background: linear-gradient(
-            128.86deg, #f6a6ff, #af43be 54.7%);
+            128.86deg, #a6feff, aqua 40.7%);
     }
     .top_divide {
         height: 50px;

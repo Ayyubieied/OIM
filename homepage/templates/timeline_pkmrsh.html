@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+PKM RSH
+{% endblock title %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% include 'overlay_pkmrsh.html' %}
+
+<div class="container header_timeline pkmrsh">
+    <div class="row">
+        <div class="col-md onlymobile" style="height: 150px;"></div>
+        <div class="col-md">
+            <h1 style="color: #0e1738;">PKM RSH</h1>
+            <p style="color: #0e1738; text-align: justify;">
+                PKM-RSH (Riset Sosial-Humaniora) merupakan gabungan antara bidang sosial dan humaniora yang 
+                memiliki objek riset pada fenomena sosial dan perilaku manusia yang dapat ditemui dalam kehidupan 
+                bermasyarakat. Bidang sosial lebih menitikberatkan pada fenomena sosial interaksi dalam kehidupan 
+                bermasyarakat seperti bidang ekonomi, psikologi, sosial, pendidikan, manajemen dan politik. 
+                Bidang humaniora lebih berfokus pada aspek dasar perilaku dalam kehidupan 3 masyarakat, seperti 
+                perkembangan budaya, seni, filsafat, adat istiadat, sejarah, kepercayaan, hukum, dan nilai-nilai. 
+                Penggabungan antara sosial dan humaniora menggunakan paradigma penelitian berupa hubungan 
+                sebab-akibat, deskriptif konklusif, fenomenologi, hermeneutik, pascakolonial, positivistik, 
+                historis, struktural, pengembangan, dan sebagainya sesuai dengan bidang ilmu masing-masing.
+            </p>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <hr style="margin-top: 60px;">
+</div>
+
+<div class="container">
+    <div class="small"></div>
+    <div class="row justify-content-center">
+        <a href="{% url 'homepage:timeline' 'all' %}" class="mybutton aqua">View All Timelines</a>
+    </div>	
+    <div class="small"></div>
+    <h2 style="color: #0e1738;">Sep. 26, 2022</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_sub_open_1')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Submission Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 04, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_video_open')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Video Upload Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 14, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_sub_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Submission Closed</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 18, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_proposal_open')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">00:00 WIB</p>
+                    <p style="color: #ddd">Proposal Grading Open</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Oct. 24, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_video_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Video Upload Closed</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Nov. 01, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_presentation')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">08:00 WIB - 17:00 WIB</p>
+                    <p style="color: #ddd">Online Presentation</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Youtube</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div>
+    <h2 style="color: #0e1738;">Nov. 14, 2021</h2>
+    <div class="row">
+            <div class="col compe_col">
+                <div class="compe pkmrsh" onclick="uploadon('pkmrsh_proposal_close')" style="min-height: 180px;">
+                    <p class="bold" style="margin-bottom: 5px;color: #ddd">23:59 WIB</p>
+                    <p style="color: #ddd">Proposal Grading Close</p>
+                    <div class="bottom_text">
+                        <p style="color: #ddd">Website</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="height: 15px;"></div> -->
+</div>
+<div class="medium"></div>
+{% include 'footer.html' %}
+
+{% endblock %}
