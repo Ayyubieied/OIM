@@ -1,4 +1,4 @@
-var deadline = new Date("Oct 22, 2022 00:00:00");
+var deadline = new Date("Oct 24, 2022 00:00:00");
 var countDownDate = deadline.getTime();
 
 function getDaysInMonth(month, year) {
